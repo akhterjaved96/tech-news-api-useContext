@@ -1,24 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import Stories from './components/Stories';
+import Pagenation from './components/Pagenation';
+import Search from './components/Search';
+// import { useGlobalContext } from './context/context';
+// import { useContext } from 'react';
+// import { AppContext } from './context/context';
 
 function App() {
+
+  //const data = useContext(AppContext);
+  //const data = useGlobalContext();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <h1>Welcome to haved tehc  {data}</h1> */}
+      <Search />
+      <Pagenation />
+      <Stories />
+    </>
   );
 }
 
